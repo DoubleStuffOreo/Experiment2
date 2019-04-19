@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+	int gal, bill;
+	float total, unpaid;
+	
+	cout << "This Program Shows Your Water Bill \n" << endl;
+	
+	cout << "Meter Readings (Previous Month + Recent): ";
+	cin >> gal;
+	
+	cout << "Unpaid Balance: P";
+	cin >> unpaid;
+	
+	if (unpaid>0)
+		total = 35 + (gal*1.10)+20;
+	else
+		total = 35 + (gal*1.10);
+
+	cout << "Total Water Bill: P" << total;
+
+	return 0;	
+}
