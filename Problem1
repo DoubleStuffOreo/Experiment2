@@ -20,22 +20,28 @@ int main ()
 	{
 		case 'A':
 		case 'a':
-			total = 995 + (hours-10)*20;
-			break;
+			if (hours<=10)
+				total = 995;
+			else
+				total = 995 + (hours-10)*20;
+				break;
 		case 'B':
 		case 'b':
-			total = 1495 + (hours - 20)*10;
-			break;
+			if (hours <=20)
+				total = 1495;
+			else	
+				total = 1495 + (hours - 20)*10;
+				break;
 		case 'C':
 		case 'c':
 			total = 1995;
 			break;
 		default:
-			cout << "Invalid Input!";
+			cout << "Invalid input, package unavailable.";
 			break;
 	}
 	
-	cout << "Total Amount Due: " << total;
+	cout << "Total Amount Due: P" << total;
 	
 	return 0;
 }
