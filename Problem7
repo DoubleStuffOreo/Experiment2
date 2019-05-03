@@ -1,0 +1,34 @@
+#include <iostream>
+#include <cmath>
+#include <stdio.h>
+
+using namespace std;
+
+int main ()
+{
+    int num, sum, i;
+    
+    do
+    {
+        cout << "Enter a number: ";
+        cin >> num;
+        
+        if (num>0)
+        {
+            sum = 0;
+            for (i=1; i<=num; i++)
+            {
+                sum += i;
+            }
+            cout << "The sum of all whole numbers from 1 to " << num << " is " << sum;
+            cout << "\n";
+        }
+        
+        else
+            cout << "Thank you! \n";
+    }
+    while (num != 0);
+  
+    return 0;
+}
+
