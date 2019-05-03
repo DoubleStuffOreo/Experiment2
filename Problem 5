@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main ()
+{
+    int counter;
+    for (counter=1; counter<=10; counter++)
+    {
+        cout << counter << ",";
+    }
+    
+    for (counter=11; counter<=30; counter++)
+    {
+        if (counter %2 ==0)
+            cout << counter << ",";
+    }
+    
+    return 0;
+}
+
